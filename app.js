@@ -16,3 +16,19 @@ function agregarAmigo() {
   }
 }
 
+function actualizarListaAmigos(nombreAmigo) {
+  const elemento = document.createElement("li");
+  elemento.textContent = nombreAmigo;
+  listaAmigos.appendChild(elemento);
+}
+
+function sortearAmigo() {
+  if (amigos.length) {
+    const indice = Math.floor(Math.random() * amigos.length);
+    const seleccionado = amigos[indice];
+    mostrarResultado(seleccionado);
+  } else {
+    alert("No hay amigos en la lista para sortear.");
+  }
+}
+
