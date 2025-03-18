@@ -32,3 +32,13 @@ function sortearAmigo() {
   }
 }
 
+function mostrarResultado(seleccionado) {
+  listaResultado.textContent = `Amigo sorteado: ${seleccionado}`;
+  setTimeout(() => {
+    listaResultado.textContent = "";
+  }, 1000);
+}
+
+// Asignar eventos a los botones
+document.querySelector("#btnAgregar").addEventListener("click", agregarAmigo);
+document.querySelector("#btnSortear").addEventListener("click", sortearAmigo);
