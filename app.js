@@ -48,7 +48,7 @@ function mostrarResultado(seleccionado) {
   listaResultado.textContent = `Amigo sorteado: ${seleccionado}`;
   setTimeout(() => {
     listaResultado.textContent = "";
-  }, 1000);
+  }, 1500);
 }
 
 function eliminarAmigoDelDOM(nombreAmigo) {
